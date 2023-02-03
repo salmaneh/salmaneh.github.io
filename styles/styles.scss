@@ -226,14 +226,15 @@ section {
 
         .image {
             border-radius: var(--br-sm-2);
-            height: 90%;
-            width: 68%;
+            // height: 90%;
+                // width: 68%;
+                width: 80%;
             margin-left: 4rem;
             transition: all .4s ease-in-out;
 
             img {
                 width: 100%;
-                height: 100%;
+                height: 50%;
                 border-radius: var(--circle);
                 object-fit: cover;
                 transition: all .4s ease-in-out;
