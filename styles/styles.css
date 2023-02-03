@@ -234,7 +234,7 @@ section {
 .header-content .left-header .image img:hover {
   filter: grayscale(0);
   cursor: default;
-  transform: translateY(-5px);
+  transform: translateY(7px);
 }
 .header-content .right-header {
   display: flex;
