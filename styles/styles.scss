@@ -227,7 +227,7 @@ section {
         .image {
             border-radius: var(--br-sm-2);
             // height: 90%;
-                // width: 68%;
+            // width: 68%;
                 width: 80%;
             margin-left: 4rem;
             transition: all .4s ease-in-out;
@@ -257,10 +257,8 @@ section {
         justify-content: center;
         padding-right: 18rem;
 
-
-
         .name {
-            font-size: 3rem;
+                font-size: 3rem;
 
             span {
                 color: var(--color-secondary);
@@ -268,6 +266,7 @@ section {
 
 
         }
+
 
         #matrix:hover {
             // background-color: var(--color-white);
