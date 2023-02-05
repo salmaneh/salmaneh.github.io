@@ -62,6 +62,7 @@ makes it much easier to change the color values
 body {
     background-color: var(--color-primary);
     font-family: 'JetBrains Mono', monospace;
+        // font-family: "Audiowide", sans-serif;
     font-size: 1.1rem;
     color: var(--color-white);
     transition: all 0.4s ease-in-out;
@@ -237,15 +238,19 @@ section {
                 height: 50%;
                 border-radius: var(--circle);
                 object-fit: cover;
-                transition: all .4s ease-in-out;
+                transition: all 4s ease-in-out;
                 filter: grayscale(100%);
 
 
 
                 &:hover {
                     filter: grayscale(0);
-                    cursor: default;
-                    transform: translateY(7px);
+                    cursor: pointer;
+                        // transform: translateY(20px);
+                        // transform: rotateY(30deg);
+                        // transform: scale(1.2);
+                        transform: rotate(-30deg) translateY(30px);
+                        // -webkit-box-reflect: right;
                 }
             }
         }
@@ -263,6 +268,7 @@ section {
             span {
                 color: var(--color-secondary);
             }
+                                                
 
 
         }
@@ -289,6 +295,7 @@ section {
 
 /*About*/
 .about-container {
+    // font-family: "Audiowide", sans-serif;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-top: 3.5rem;

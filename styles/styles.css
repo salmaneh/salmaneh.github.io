@@ -228,13 +228,13 @@ section {
   border-radius: var(--circle);
   -o-object-fit: cover;
      object-fit: cover;
-  transition: all 0.4s ease-in-out;
+  transition: all 4s ease-in-out;
   filter: grayscale(100%);
 }
 .header-content .left-header .image img:hover {
   filter: grayscale(0);
-  cursor: default;
-  transform: translateY(7px);
+  cursor: pointer;
+  transform: rotate(-30deg) translateY(30px);
 }
 .header-content .right-header {
   display: flex;
