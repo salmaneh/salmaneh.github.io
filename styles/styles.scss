@@ -59,6 +59,7 @@ makes it much easier to change the color values
     --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3);
 }
 
+
 body {
     background-color: var(--color-primary);
     font-family: 'JetBrains Mono', monospace;
@@ -67,7 +68,6 @@ body {
     color: var(--color-white);
     transition: all 0.4s ease-in-out;
 }
-
 .light-mode {
     --color-primary: #FFFFFF;
     --color-secondary: #00DD00;
@@ -229,7 +229,7 @@ section {
             border-radius: var(--br-sm-2);
             // height: 90%;
             // width: 68%;
-                width: 80%;
+            width: 80%;
             margin-left: 4rem;
             transition: all .4s ease-in-out;
 
@@ -246,7 +246,7 @@ section {
                 &:hover {
                     filter: grayscale(0);
                     cursor: pointer;
-                        // transform: translateY(20px);
+                    // transform: translateY(20px);
                         // transform: rotateY(30deg);
                         // transform: scale(1.2);
                         transform: rotate(-30deg) translateY(30px);
@@ -263,12 +263,12 @@ section {
         padding-right: 18rem;
 
         .name {
-                font-size: 3rem;
+            font-size: 3rem;
 
             span {
                 color: var(--color-secondary);
             }
-                                                
+
 
 
         }
