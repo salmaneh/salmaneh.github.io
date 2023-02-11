@@ -109,19 +109,24 @@ section {
   background-color: var(--color-primary);
 }
 
+.container::before {
+  background-image: url(../logos/gradient-Sign1.png);
+  background-size: 100px 50px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin: 0;
+  content: "";
+}
+
 .active {
   display: block;
-  -webkit-animation: appear 1s ease-in-out;
-          animation: appear 1s ease-in-out;
+  animation: appear 1s ease-in-out;
   transform: translateY(0) scaleY(1);
-}
-@-webkit-keyframes appear {
-  0% {
-    transform: translateY(-100%) scaleY(0);
-  }
-  100% {
-    transform: translateY(0) scaleY(1);
-  }
 }
 @keyframes appear {
   0% {
@@ -229,7 +234,13 @@ section {
   -o-object-fit: cover;
      object-fit: cover;
   transition: all 4s ease-in-out;
-  filter: grayscale(100%);
+  animation: mymove 7s infinite;
+}
+@keyframes mymove {
+  50% {
+    filter: grayscale(100%);
+    filter: hue-rotate(360deg);
+  }
 }
 .header-content .left-header .image img:hover {
   filter: grayscale(0);
