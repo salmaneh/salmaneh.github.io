@@ -110,7 +110,7 @@ section {
 }
 
 .container::before {
-  background-image: url(../logos/gradient-Sign1.png);
+  background-image: url(../logos/logo.png);
   background-size: 100px 50px;
   background-repeat: no-repeat;
   display: inline-block;
