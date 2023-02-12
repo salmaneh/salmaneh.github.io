@@ -4,42 +4,6 @@
   box-sizing: border-box;
   list-style: none;
 }
-
-/*
-CSS Variables - The var() Function
-CSS Variables
-The var() function is used to insert the value of a CSS variable.
-
-CSS variables have access to the DOM, which means that you can create variables with local or global scope, change the variables with JavaScript, and change the variables based on media queries.
-
-A good way to use CSS variables is when it comes to the colors of your design. Instead of copy and paste the same colors over and over again, you can place them in variables.
-
-Syntax of the var() Function
-The var() function is used to insert the value of a CSS variable.
-
-The syntax of the var() function is as follows:
-
-var(--name, value)
-Value	Description
-name	Required. The variable name (must start with two dashes)
-value	Optional. The fallback value (used if the variable is not found)
-Note: The variable name must begin with two dashes (--) and it is case sensitive!
-
-How var() Works
-First of all: CSS variables can have a global or local scope.
-
-Global variables can be accessed/used through the entire document, while local variables can be used only inside the selector where it is declared.
-
-To create a variable with global scope, declare it inside the :root selector. The :root selector matches the document's root element.
-
-To create a variable with local scope, declare it inside the selector that is going to use it.
-
-
-Advantages of using var() are:
-
-makes the code easier to read (more understandable)
-makes it much easier to change the color values
-*/
 :root {
   --color-primary: #191d2b;
   --color-secondary: #ff1e00;
@@ -77,6 +41,16 @@ body {
   --color-grey-4: #454e56;
   --color-grey-5: #f8f8f8;
   --color-grey-6: #12181b;
+}
+
+body::-moz-selection {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+body::selection {
+  background: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 a {
@@ -120,12 +94,13 @@ section {
   left: 0px;
   top: 0px;
   margin: 0;
+  cursor: pointer;
   content: "";
 }
 
 .active {
   display: block;
-  animation: appear 1s ease-in-out;
+  animation: appear 1.5s ease-in-out;
   transform: translateY(0) scaleY(1);
 }
 @keyframes appear {
@@ -215,11 +190,11 @@ section {
   height: 100%;
   background-color: var(--color-secondary);
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 0px;
+  top: 0px;
   z-index: -1;
-  -webkit-clip-path: polygon(0% 0%, 10% 0%, 10% 100%, 20% 100%, 20% 0%, 30% 0%, 30% 100%, 40% 100%, 40% 0%, 50% 0%, 50% 100%, 60% 100%, 60% 0%, 70% 0%, 70% 100%, 80% 100%, 80% 0%, 90% 0%, 90% 100%, 100% 100%, 100% 1%, 100% 10%, 0% 10%, 0% 20%, 100% 20%, 100% 30%, 0% 30%, 0% 40%, 100% 40%, 100% 50%, 0% 50%, 0% 60%, 100% 60%, 100% 70%, 0% 70%, 0% 80%, 100% 80%, 100% 90%, 0% 90%, 0% 100%);
-          clip-path: polygon(0% 0%, 10% 0%, 10% 100%, 20% 100%, 20% 0%, 30% 0%, 30% 100%, 40% 100%, 40% 0%, 50% 0%, 50% 100%, 60% 100%, 60% 0%, 70% 0%, 70% 100%, 80% 100%, 80% 0%, 90% 0%, 90% 100%, 100% 100%, 100% 1%, 100% 10%, 0% 10%, 0% 20%, 100% 20%, 100% 30%, 0% 30%, 0% 40%, 100% 40%, 100% 50%, 0% 50%, 0% 60%, 100% 60%, 100% 70%, 0% 70%, 0% 80%, 100% 80%, 100% 90%, 0% 90%, 0% 100%);
+  -webkit-clip-path: polygon(0% 20%, 10% 20%, 10% 100%, 20% 100%, 20% 20%, 30% 20%, 30% 100%, 40% 100%, 40% 20%, 40% 10%, 40% 100%, 60% 100%, 60% 0%, 70% 0%, 70% 100%, 80% 100%, 80% 0%, 90% 0%, 90% 100%, 100% 100%, 100% 0%, 100% 10%, 0% 10%, 0% 20%, 100% 20%, 100% 30%, 0% 30%, 0% 40%, 100% 40%, 100% 50%, 0% 50%, 0% 60%, 100% 60%, 100% 70%, 0% 70%, 0% 80%, 100% 80%, 100% 90%, 0% 90%, 0% 100%);
+  clip-path: polygon(0% 20%, 10% 20%, 10% 100%, 20% 100%, 20% 20%, 30% 20%, 30% 100%, 40% 100%, 40% 20%, 40% 10%, 40% 100%, 60% 100%, 60% 0%, 70% 0%, 70% 100%, 80% 100%, 80% 0%, 90% 0%, 90% 100%, 100% 100%, 100% 0%, 100% 10%, 0% 10%, 0% 20%, 100% 20%, 100% 30%, 0% 30%, 0% 40%, 100% 40%, 100% 50%, 0% 50%, 0% 60%, 100% 60%, 100% 70%, 0% 70%, 0% 80%, 100% 80%, 100% 90%, 0% 90%, 0% 100%);
 }
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
@@ -230,6 +205,7 @@ section {
 .header-content .left-header .image img {
   width: 100%;
   height: 50%;
+  border: 10px var(--color-secondary) solid;
   border-radius: var(--circle);
   -o-object-fit: cover;
      object-fit: cover;
@@ -375,7 +351,7 @@ section {
   width: 80%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .css {
-  width: 95%;
+  width: 70%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .js {
   width: 75%;
@@ -384,10 +360,53 @@ section {
   width: 60%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .node {
-  width: 87%;
+  width: 60%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .python {
+  width: 60%;
+  }
+
+  .about-stats .progress-bars .progress-bar .progress-con .progress .sql {
+    width: 75%;
+  }
+
+  .about-stats .progress-bars .progress-bar .progress-con .progress .cpp {
+    width: 70%;
+  }
+
+  .about-stats .progress-bars .progress-bar .progress-con .progress .mongodb {
   width: 70%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .git {
+  width: 75%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .linux {
+  width: 55%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .bash {
+  width: 40%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .github {
+  width: 75%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .bootstrap {
+  width: 80%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .terminal {
+  width: 55%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .photoshop {
+  width: 55%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .illustrator {
+  width: 30%;
 }
 
 .stat-title {
@@ -753,60 +772,9 @@ section {
   z-index: -1;
   transform: translate(-50%, -50%);
   font-weight: 800;
-  font-size: rem;
+  font-size: 4rem;
 }
 
-/*
-Just like CSS, Sass also supports the @import directive.
-
-The @import directive allows you to include the content of one file in another.
-
-The CSS @import directive has a major drawback due to performance issues; it creates an extra HTTP request each time you call it. However, the Sass @import directive includes the file in the CSS; so no extra HTTP call is required at runtime!
-
-Sass Import Syntax:
-
-@import filename;
-Tip: You do not need to specify a file extension, Sass automatically assumes that you mean a .sass or .scss file. You can also import CSS files. The @import directive imports the file and any variables or mixins defined in the imported file can then be used in the main file.
-
-You can import as many files as you need in the main file: 
-*/
-/*
-Now, if you import the partial file, omit the underscore. Sass understands that it should import the file "_media.scss"
-*/
-/*
-
-PAY ATTENTION TO THE FILE NAME
-
-Sass Partials
-By default, Sass transpiles all the .scss files directly. However, when you want to import a file, you do not need the file to be transpiled directly.
-
-Sass has a mechanism for this: If you start the filename with an underscore, Sass will not transpile it. Files named this way are called partials in Sass.
-
-So, a partial Sass file is named with a leading underscore:
-
-Sass Partial Syntax:
-
- _filename;
-
-
-
- -----------------------------------------------------------------------------------
-
-Media query is a CSS technique introduced in CSS3.
-
-It uses the @media rule to include a block of CSS properties only if a certain condition is true.
-
-Example
-If the browser window is 600px or smaller, the background color will be lightblue:
-
-@media only screen and (max-width: 600px) {    
-  body {
-    background-color: lightblue;
-  }
-}
-
-
-*/
 .about-container .left-about p {
   padding-left: 0;
 }
@@ -829,13 +797,13 @@ If the browser window is 600px or smaller, the background color will be lightblu
   .right-header {
     grid-row: 1;
     padding-right: 0rem !important;
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
   }
   .right-header .name {
-    font-size: 2.5rem !important;
+    font-size: 2rem !important;
     text-align: center;
-    padding-top: 3rem;
+    padding-top: 2rem;
   }
   .header-content .left-header .image {
     margin: 0 auto;
@@ -1014,9 +982,9 @@ If the browser window is 600px or smaller, the background color will be lightblu
     margin: 0 auto;
   }
   .right-header .name {
-    font-size: 2.5rem !important;
+    font-size: 2rem !important;
     text-align: center;
-    padding-top: 3rem;
+    padding-top: 2rem;
   }
 }
 @media screen and (max-width: 700px) {
@@ -1041,4 +1009,4 @@ If the browser window is 600px or smaller, the background color will be lightblu
   .main-title h2 .bg-text {
     font-size: 4rem;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
