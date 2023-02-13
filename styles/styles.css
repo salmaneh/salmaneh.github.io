@@ -204,6 +204,7 @@ section {
 }
 .header-content .left-header .image img {
   width: 100%;
+  /* width: 80%; */
   height: 50%;
   border: 10px var(--color-secondary) solid;
   border-radius: var(--circle);
