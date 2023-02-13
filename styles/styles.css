@@ -208,7 +208,7 @@ section {
   border: 10px var(--color-secondary) solid;
   border-radius: var(--circle);
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: all 4s ease-in-out;
   animation: mymove 7s infinite;
 }
@@ -364,17 +364,17 @@ section {
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .python {
   width: 60%;
-  }
+}
 
-  .about-stats .progress-bars .progress-bar .progress-con .progress .sql {
-    width: 75%;
-  }
+.about-stats .progress-bars .progress-bar .progress-con .progress .sql {
+  width: 75%;
+}
 
-  .about-stats .progress-bars .progress-bar .progress-con .progress .cpp {
-    width: 70%;
-  }
+.about-stats .progress-bars .progress-bar .progress-con .progress .cpp {
+  width: 70%;
+}
 
-  .about-stats .progress-bars .progress-bar .progress-con .progress .mongodb {
+.about-stats .progress-bars .progress-bar .progress-con .progress .mongodb {
   width: 70%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .git {
@@ -497,7 +497,7 @@ section {
   width: 100%;
   height: 300px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 15px;
 }
 .portfolios .portfolio-item .hover-items {
@@ -582,7 +582,7 @@ section {
   width: 100%;
   height: 300px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   filter: grayscale(100%);

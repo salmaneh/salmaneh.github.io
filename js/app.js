@@ -1,3 +1,4 @@
+// Immediately Invoked Function Expression (IIFE)
 (function () {
   [...document.querySelectorAll(".control")].forEach((button) => {
     button.addEventListener("click", function () {
@@ -12,7 +13,7 @@
   });
 })();
 
-//for matrix
+//for #matrix
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let interval = null;
 document.getElementById("matrix").onmouseover = (event) => {
