@@ -708,6 +708,8 @@ section {
 .btn-con {
   display: flex;
   align-self: flex-start;
+  margin-top: .1rem;
+  margin-bottom: 4.5rem;
 }
 
 .main-btn {
