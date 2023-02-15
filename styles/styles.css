@@ -294,7 +294,7 @@ section {
   padding: 0.3rem;
   border-radius: 0.25rem;
   cursor: pointer;
-  width: 25%;
+  width: 100px;
   text-align: center;
   font-weight: 600;
 }
