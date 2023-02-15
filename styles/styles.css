@@ -252,7 +252,14 @@ section {
 }
 
 .header-content .right-header .name span {
-  color: var(--color-secondary);
+  /* color: var(--color-secondary); */
+
+
+  background: -webkit-linear-gradient(20deg, var(--color-secondary), #7303c0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 
 .header-content .right-header #matrix:hover {
@@ -305,11 +312,13 @@ section {
 }
 
 .header-content .right-header .expand-btn::before {
-  content: "Expand";
+  /* content: "Expand"; */
+  content: "Read more";
 }
 
 .header-content .right-header .expand-btn:checked::before {
-  content: "Collapse";
+  /* content: "Collapse"; */
+  content: "Read less";
 }
 
 .header-content .right-header .cutoff-text:has(+ .expand-btn:checked) {
