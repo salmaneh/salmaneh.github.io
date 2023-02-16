@@ -21,7 +21,9 @@
   --circle: 50%;
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3);
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: var(--color-primary);
   font-family: "JetBrains Mono", monospace;
