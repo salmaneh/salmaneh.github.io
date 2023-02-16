@@ -51,10 +51,12 @@ body::-moz-selection {
   color: var(--color-primary);
 }
 
-body::selection {
+/* body::selection {
   background: var(--color-secondary);
   color: var(--color-primary);
 }
+
+*/
 
 a {
   display: inline-block;
@@ -183,7 +185,9 @@ section {
   color: var(--color-grey-2);
   pointer-events: none;
 }
-
+.theme-btn .message {
+  background-color: var(--color-primary);
+}
 /*Header-content*/
 .header-content {
   display: grid;
@@ -218,7 +222,7 @@ section {
 }
 
 .header-content .left-header .image img {
-  width: 100%;
+  width: 90%;
   /* width: 80%; */
   height: 50%;
   border: 10px var(--color-secondary) solid;
@@ -241,7 +245,11 @@ section {
   cursor: pointer;
   transform: rotate(-30deg) translateY(30px);
 }
-
+.header-content .left-header .image .message {
+  margin: 2rem;
+  padding: 0.25rem;
+  font-weight: 900;
+}
 .header-content .right-header {
   display: flex;
   flex-direction: column;
@@ -269,6 +277,16 @@ section {
   border-right: 0.15rem solid rgb(248, 5, 216);
   border-bottom: 0.15rem solid var(--color-secondary);
   border-left: 0.15rem solid yellow;
+}
+.header-content .right-header .sub-title {
+  color: var(--color-secondary);
+  animation: mymove 7s infinite;
+}
+
+@keyframes mymove {
+  50% {
+    filter: hue-rotate(360deg);
+  }
 }
 .header-content .right-header #matrix:hover {
   color: var(--color-white);
