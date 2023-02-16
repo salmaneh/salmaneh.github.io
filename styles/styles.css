@@ -246,8 +246,6 @@ section {
   transform: rotate(-30deg) translateY(30px);
 }
 .header-content .left-header .image .message {
-  margin: 2rem;
-  padding: 0.25rem;
   font-weight: 900;
 }
 .header-content .right-header {
