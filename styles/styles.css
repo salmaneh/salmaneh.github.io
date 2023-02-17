@@ -222,10 +222,8 @@ section {
 }
 
 .header-content .left-header .image img {
-  width: 90%;
-  /* width: 80%; */
-  height: 50%;
-  border: 10px var(--color-secondary) solid;
+  width: 70%;
+  border:0.25rem var(--color-secondary) solid;
   border-radius: var(--circle);
   -o-object-fit: cover;
   object-fit: cover;
@@ -246,6 +244,7 @@ section {
   transform: rotate(-30deg) translateY(30px);
 }
 .header-content .left-header .image .message {
+  margin: 2rem;
   font-weight: 900;
 }
 .header-content .right-header {
