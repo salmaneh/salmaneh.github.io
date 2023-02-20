@@ -1,11 +1,40 @@
 function sendMail(event) {
   event.preventDefault(); // prevent form submission and page reload
 
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var subject = document.getElementById("subject").value;
+  var message = document.getElementById("message").value;
+
+  // Check if form inputs are not empty
+  if (
+    name.trim() === "" ||
+    email.trim() === "" ||
+    subject.trim() === "" ||
+    message.trim() === ""
+  ) {
+    alert("Please fill out all required fields.");
+    return;
+  }
+  // or
+  // if (!name || !email || !subject || !message) {
+  //   alert("Please fill out all required fields.");
+  //   return;
+  // }
+
+  // var params = {
+  //   name: document.getElementById("name").value,
+  //   email: document.getElementById("email").value,
+  //   subject: document.getElementById("subject").value,
+  //   message: document.getElementById("message").value,
+  // };
+
+  // Create email parameters
   var params = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    subject: document.getElementById("subject").value,
-    message: document.getElementById("message").value,
+    name: name,
+    email: email,
+    subject: subject,
+    message: message,
   };
 
   const serviceID = "service_7wstq8b";

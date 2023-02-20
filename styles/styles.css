@@ -1011,7 +1011,7 @@ content: "Collapse";
   transition: all 0.4s ease-in-out;
   border-radius: 30px;
   font-weight: 600;
-  letter-spacing: 0.25rem;
+  /* letter-spacing: 0.25rem; */
   font-size: inherit;
   font-family: inherit;
   padding: 0.8rem 1.1rem;
