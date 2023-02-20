@@ -45,10 +45,10 @@ function sendMail(event) {
       document.getElementById("spinner").style.display = "none";
       document.getElementById("success-message").style.display = "block";
 
-      // hide success message after 5 seconds
+      // hide success message after 9 seconds
       setTimeout(function () {
         document.getElementById("success-message").style.display = "none";
-      }, 5000);
+      }, 9000);
     })
     .catch((err) => {
       console.log(err);
@@ -57,9 +57,9 @@ function sendMail(event) {
       document.getElementById("spinner").style.display = "none";
       document.getElementById("error-message").style.display = "block";
 
-      // hide error message after 5 seconds
+      // hide error message after 9 seconds
       setTimeout(function () {
         document.getElementById("error-message").style.display = "none";
-      }, 5000);
+      }, 9000);
     });
 }
