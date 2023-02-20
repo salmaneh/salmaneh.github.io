@@ -16,18 +16,6 @@ function sendMail(event) {
     alert("Please fill out all required fields.");
     return;
   }
-  // or
-  // if (!name || !email || !subject || !message) {
-  //   alert("Please fill out all required fields.");
-  //   return;
-  // }
-
-  // var params = {
-  //   name: document.getElementById("name").value,
-  //   email: document.getElementById("email").value,
-  //   subject: document.getElementById("subject").value,
-  //   message: document.getElementById("message").value,
-  // };
 
   // Create email parameters
   var params = {
@@ -56,6 +44,11 @@ function sendMail(event) {
       // hide spinner and show success message
       document.getElementById("spinner").style.display = "none";
       document.getElementById("success-message").style.display = "block";
+
+      // hide success message after 5 seconds
+      setTimeout(function () {
+        document.getElementById("success-message").style.display = "none";
+      }, 5000);
     })
     .catch((err) => {
       console.log(err);
@@ -63,5 +56,10 @@ function sendMail(event) {
       // hide spinner and show error message
       document.getElementById("spinner").style.display = "none";
       document.getElementById("error-message").style.display = "block";
+
+      // hide error message after 5 seconds
+      setTimeout(function () {
+        document.getElementById("error-message").style.display = "none";
+      }, 5000);
     });
 }
