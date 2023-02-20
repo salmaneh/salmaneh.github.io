@@ -16,6 +16,14 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("GU2JLH0Zv-VoKqTJM");
+
+        })();
+    </script>
 </head>
 
 <body class="main-content ">
@@ -31,7 +39,7 @@
                             <i class="fas fa-heart"></i> Helping nice people build nice products. <br><i class="fas fa-heart"></i>
                             Transforming your vision into stunning,
                             user-friendly products with a smile.
-                    
+
                         </p>
                     </div>
                 </div>
@@ -250,9 +258,9 @@
                                 <span class="mongodb"></span>
                             </div>
                         </div>
-                        </div>
-                        <div class="progress-bar">
-                            <p class="prog-title"><i class="fas fa-terminal"></i> terminal</p>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fas fa-terminal"></i> terminal</p>
                         <div class="progress-con">
                             <p class="prog-text">60%</p>
                             <div class="progress">
@@ -582,25 +590,33 @@
                     </div>
                     <div class="right-contact">
                         <!-- <p>Or Drop a message here.</p> -->
+
                         <form action="" class="contact-form">
                             <div class="input-control i-c-2">
-                                <input type="text" required placeholder="YOUR NAME">
-                                <input type="email" required placeholder="YOUR EMAIL">
+                                <input type="text" id="name" required placeholder="YOUR NAME">
+                                <input type="email" id="email" required placeholder="YOUR EMAIL">
                             </div>
                             <div class="input-control">
-                                <input type="text" required placeholder="ENTER SUBJECT">
+                                <input type="text" id="subject" required placeholder="ENTER SUBJECT">
                             </div>
                             <div class="input-control">
-                                <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                                <textarea name="" id="message" cols="15" rows="8" placeholder="Message Here..." required></textarea>
                             </div>
-                            <div class="submit-btn">
-                                <a href="#" class="main-btn">
-                                    <span class="btn-text ">Submit</span>
-                                    <span class="btn-icon"> <i class=" fas fa-paper-plane"></i></i></span>
+                            <input onclick="sendMail(event)" type="submit" value="Send">
 
-                                </a>
+                            <div id="spinner" style="display: none;">
+                                <i class="fa fa-spinner fa-spin"></i> Sending...
+                            </div>
+                            <div id="success-message" style="display: none;">
+                                Your response has been recorded successfully! <br>Hang tight, I will get back to you
+                                soon.
+                            </div>
+                            <div id="error-message" style="display: none;">
+                                There was a problem sending your message. Please try again later.
                             </div>
                         </form>
+
+
                     </div>
                 </div>
             </div>
@@ -633,6 +649,7 @@
     </div>
 
     <script src="js/app.js"></script>
+    <script src="js/email.js"></script>
 </body>
 
 </html>

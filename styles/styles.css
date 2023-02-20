@@ -917,7 +917,7 @@ content: "Collapse";
   display: flex;
   align-items: center;
   color: var(--color-white);
-  background-color: var(--color-grey-5);
+  background-color: var(--color-secondary);
   cursor: pointer;
   justify-content: center;
   width: 50px;
@@ -974,11 +974,58 @@ content: "Collapse";
   margin-left: 1.5rem;
 }
 
-.contact-content-con .right-contact .submit-btn {
+/* .contact-content-con .right-contact .submit-btn {
   display: flex;
   justify-content: flex-start;
 }
 
+*/ .contact-content-con .right-contact #spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.contact-content-con .right-contact #success-message {
+  display: none;
+  margin-top: 1rem;
+  font-size: 1.2em;
+  color: #4caf50;
+}
+
+.contact-content-con .right-contact #error-message {
+  display: none;
+  margin-top: 1rem;
+  font-size: 1.2em;
+  color: #f44336;
+}
+
+.contact-content-con .right-contact input[type=submit] {
+  background-color: var(--color-secondary);
+  cursor: pointer;
+  justify-content: center;
+  border: 0.1rem solid var(--color-secondary);
+  margin: 0 0.4rem;
+  transition: all 0.4s ease-in-out;
+  border-radius: 30px;
+  font-weight: 600;
+  letter-spacing: 0.25rem;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.8rem 1.1rem;
+  outline: none;
+  border: none;
+  width: 100%;
+  color: var(--color-white);
+  resize: none;
+}
+
+.contact-content-con .right-contact input[type=submit]:hover {
+  background-color: var(--color-grey-4);
+  color: var(--color-secondary);
+}
 /*Independed components*/
 .btn-con {
   display: flex;
