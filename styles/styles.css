@@ -605,7 +605,7 @@ content: "Collapse";
   left: 50%;
   top: 0;
   width: 40%;
-  height: 1px;
+  height: 3px;
   background-color: var(--color-grey-5);
   transform: translateX(-50%);
 }
@@ -621,7 +621,7 @@ content: "Collapse";
 .timeline .timeline-item {
   position: relative;
   padding-left: 3rem;
-  border-left: 1px solid var(--color-grey-5);
+  border-left: 3px solid var(--color-grey-5);
 }
 
 .timeline .timeline-item .tl-icon {
