@@ -995,6 +995,7 @@ content: "Collapse";
   margin-top: 1rem;
   font-size: 1.2em;
   color: #4caf50;
+  text-align: center;
 }
 
 .contact-content-con .right-contact #error-message {
@@ -1002,6 +1003,7 @@ content: "Collapse";
   margin-top: 1rem;
   font-size: 1.2em;
   color: #f44336;
+  text-align: center;
 }
 
 .contact-content-con .right-contact input[type=submit] {
