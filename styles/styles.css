@@ -275,7 +275,7 @@ section {
   border-bottom: 0.15rem solid var(--color-secondary);
   border-left: 0.15rem solid yellow;
 }
-.header-content .right-header .sub-title {
+/* .header-content .right-header .sub-title {
   color: var(--color-secondary);
   animation: mymove 7s infinite;
 }
@@ -285,6 +285,8 @@ section {
     filter: hue-rotate(360deg);
   }
 }
+
+*/
 .header-content .right-header #matrix:hover {
   color: var(--color-white);
   cursor: pointer;
@@ -985,7 +987,7 @@ content: "Collapse";
   justify-content: center;
   margin: 1rem;
   font-size: 1.2em;
-  color: #555;
+  color: var(--color-secondary);
 }
 
 .contact-content-con .right-contact #success-message {

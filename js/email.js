@@ -1,3 +1,14 @@
+// validate Email
+function validateEmail() {
+  const emailInput = document.getElementById("email");
+  const email = emailInput.value.trim();
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(email)) {
+    alert("Please enter a valid email address.");
+    emailInput.value = "";
+  }
+}
+
 function sendMail(event) {
   event.preventDefault(); // prevent form submission and page reload
 
