@@ -475,6 +475,16 @@ content: "Collapse";
   max-height: none;
 }
 
+.meetup {
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+.meetup a span {
+
+  text-decoration: underline;
+}
+
 /* --------- */
 .about-stats {
   padding-bottom: 4rem;
@@ -748,7 +758,7 @@ content: "Collapse";
 
 .portfolios .portfolio-item .hover-items {
   width: 100%;
-  height: 100%;
+  height: 93%;
   background-color: var(--color-secondary);
   position: absolute;
   left: 0;
@@ -803,9 +813,11 @@ content: "Collapse";
 }
 
 .portfolio-item:hover .hover-items {
-  opacity: 1;
+  opacity: .8;
   transform: scale(1);
 }
+
+
 
 .blogs {
   display: grid;
@@ -838,10 +850,10 @@ content: "Collapse";
   width: 100%;
   height: 300px;
   -o-object-fit: cover;
-  object-fit: cover;
+  /* object-fit: cover; */
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
   transition: all 0.4s ease-in-out;
 }
 
