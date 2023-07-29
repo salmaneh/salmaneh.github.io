@@ -46,62 +46,51 @@
             emailjs.init("GU2JLH0Zv-VoKqTJM");
 
         })();
-    </script>
-    <!-- <style>
-                            /* Styling for the overlay */
-                            #overlay {
-                                display: none;
-                                position: fixed;
-                                top: 0;
-                                left: 0;
-                                width: 100%;
-                                height: 100%;
-                                background-color: rgba(0, 0, 0, 0.5);
-                                z-index: 9999;
-                            }
-                        
-                            /* Styling for the modal */
-                            #modal {
-                                position: absolute;
-                                top: 50%;
-                                left: 50%;
-                                transform: translate(-50%, -50%);
-                                background-color: #fff;
-                                padding: 20px;
-                                border-radius: 8px;
-                            }
-                        </style>
-                        <script>
-                            // JavaScript to detect if the user is on a mobile device
-                            function isMobileDevice() {
-                                return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-                            }
-                    
-                            // Function to show the overlay and modal
-                            function showDesktopModePrompt() {
-                                if (isMobileDevice()) {
-                                    document.getElementById("overlay").style.display = "block";
-                                }
-                            }
-                    
-                            // Function to switch to desktop mode
-                            function switchToDesktopMode() {
-                                window.open("https://sa-lman.github.io/");
-                                document.getElementById("overlay").style.display = "none";
-                            }
-                        </script> -->
+</script>
+
+    <script>
+            // Function to close the popup
+            function closePopup() {
+                document.getElementById("popup-overlay").style.display = "none";
+            }
+
+            // Function to show the popup when the page loads
+            document.addEventListener("DOMContentLoaded", function () {
+                var popupOverlay = document.getElementById("popup-overlay");
+                var popupMessage = document.getElementById("popup-message");
+                var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+                if (isMobile) {
+                    popupMessage.innerHTML = "<i class='fas fa-lightbulb fa-lg'></i>&ensp;<b>Did you know?</b><br>This portfolio will also look great on <b>desktop.</b>&emsp;<button id='ok-button' onclick='closePopup()'> OK </button>";
+                } else {
+                    popupMessage.innerHTML = "<i class='fas fa-lightbulb fa-lg'></i>&ensp;<b>Did you know?</b><br>This portfolio will also look great on <b>mobile.</b>&emsp;<button id='ok-button' onclick='closePopup()'> OK </button>";
+                }
+
+            // Display the popup after a delay (e.g., 3 seconds)
+            setTimeout(function () {
+                popupOverlay.style.display = "block";
+            }, 2500); // Adjust the delay (in milliseconds) as needed
+        });
+
+                // Function to close the popup when clicking outside of it
+                window.addEventListener("click", function (event) {
+                    var popupOverlay = document.getElementById("popup-overlay");
+                    if (event.target === popupOverlay) {
+                        closePopup();
+                    }
+        });
+        </script>
 
 </head>
 
-<body onload="showDesktopModePrompt()" class="main-content ">
+<body class="main-content ">
 
-    <!-- Overlay and modal -->
-    <!-- <div id="overlay">
-        <div id="modal">
-            <p>For a better experience, switch to desktop mode.</p>
-            <button onclick="switchToDesktopMode()">Switch to Desktop Mode</button>
+    <div id="popup-overlay">
+        <!-- Popup message -->
+        <div id="popup-message">
+            <!-- The content of the popup will be dynamically added here using JavaScript -->
         </div>
-    </div> -->
+    </div>
 
     <header class="container header active" id="home">
         <div class="header-content">
@@ -111,7 +100,7 @@
                     <img src="img/hero.jpg" alt="This is me.">
                     <div class="message">
                         <p>
-                            <i class="fas fa-heart"></i> Helping nice people build nice products. <br><i class="fas fa-heart"></i>
+                            <i class="fas fa-heart fa-lg"></i> Helping nice people build nice products. <br><i class="fas fa-heart fa-lg"></i>
                             Transforming your vision into stunning,
                             user-friendly products with a smile.
 
@@ -136,7 +125,7 @@
                 <div class="btn-con">
                     <a href="cv/Resume.pdf" class="main-btn">
                         <span class="btn-text">Download CV</span>
-                        <span class="btn-icon"><i class="fas fa-download"></i></span>
+                        <span class="btn-icon"><i class="fas fa-file-download fa-spin"></i></span>
                     </a>
                 </div>
 
@@ -172,13 +161,13 @@
                     <div class="btn-con">
                         <a href="cv/Resume.pdf" class="main-btn">
                             <span class="btn-text">Download CV</span>
-                            <span class="btn-icon"><i class="fas fa-download"></i></span>
+                            <span class="btn-icon"><i class="fas fa-file-download fa-spin"></i></span>
                         </a>
                     </div>
                     <div class="meetup">
                         <a href="https://selmon.bio.link/" target="_blank">
                             <span>Meet Me </span>
-                            <i class="fas fa-external-link-alt"></i>
+                            <i class="fas fa-handshake fa-lg"></i>
                         </a>
                     </div>
                 </div>
@@ -612,7 +601,7 @@
                                 You're welcome to contact me regarding any potential opportunities or to connect for
                                 future collaborations.</strong>
                             <a style="color: #00DD00;" href="mailto:connect.celman@gmail.com" target="_blank">
-                                <i class="far fa-envelope"></i>
+                                <i class="fas fa-at fa-spin fa-lg"></i>
                             </a>
                         </p>
                         <div class="contact-info">
@@ -711,7 +700,7 @@
         </div>
     </div>
     <div class="theme-btn">
-        <i class="fas fa-adjust"></i>
+        <i class="fas fa-adjust fa-spin"></i>
     </div>
 
     <script src="js/app.js"></script>

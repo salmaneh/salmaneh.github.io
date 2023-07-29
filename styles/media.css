@@ -1,3 +1,12 @@
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+
+  /* Adjust the popup position for smaller screens */
+  #popup-message {
+    top: 30%;
+  }
+}
+
 .about-container .left-about p {
   padding-left: 0;
 }
