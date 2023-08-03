@@ -74,3 +74,4 @@ function sendMail(event) {
       }, 9000);
     });
 }
+
