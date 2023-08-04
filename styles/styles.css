@@ -48,6 +48,8 @@ body {
   --color-grey-6: #12181b;
 }
 
+
+
 /* Styling for the popup overlay */
 #popup-overlay {
   display: none;
@@ -71,35 +73,26 @@ border:.1rem solid var(--color-grey-2);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #006f71;
+  background: var(--cp);
   padding: .5rem;
   border-radius: .5rem;
-  text-align: center;
+  /* text-align: center; */
   max-width: 100%;
+  text-wrap:balance;
   /* Limit the maximum width for responsiveness */
 }
 
 /* Styling for the "Ok" button */
 #ok-button {
   padding: .1rem .6rem;
-  background-color: #191d2b;
+  background-color: var(--color-secondary);
   color: #FFFFFF;
   border: none;
   border-radius: .2rem;
   cursor: pointer;
 }
 
-body::-moz-selection {
-  background: var(--color-secondary);
-  color: var(--color-primary);
-}
 
-/* body::selection {
-  background: var(--color-secondary);
-  color: var(--color-primary);
-}
-
-*/
 
 a {
   display: inline-block;
@@ -290,12 +283,14 @@ section {
 .header-content .left-header .image .message {
   margin: 2rem;
   font-weight: 900;
+  text-wrap:balance;
 }
 .header-content .right-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-right: 18rem;
+  /* padding-top: 1rem; */
 }
 
 .header-content .right-header .name {
@@ -323,13 +318,11 @@ section {
   color: var(--color-secondary);
   animation: mymove 7s infinite;
 }
-
 @keyframes mymove {
   50% {
     filter: hue-rotate(360deg);
   }
 }
-
 */
 .header-content .right-header #matrix:hover {
   color: var(--color-white);
@@ -520,12 +513,11 @@ section {
 }
 
 .meetup {
-  color: var(--color-secondary);
-  text-decoration: underline;
+ text-decoration: underline;
 }
 
 .meetup a span {
-
+  color: var(--color-secondary);
   text-decoration: underline;
 }
 
@@ -1019,7 +1011,7 @@ section {
   outline: none;
   border: none;
   background-color: var(--color-grey-5);
-  width: 100%;
+  width: 80%;
   color: var(--color-white);
   resize: none;
 }
@@ -1077,14 +1069,14 @@ section {
   padding: 0.8rem 1.1rem;
   outline: none;
   border: none;
-  width: 100%;
+  width: 80%;
   color: var(--color-white);
   resize: none;
 }
 
 .contact-content-con .right-contact input[type=submit]:hover {
-  background-color: var(--color-grey-4);
-  color: var(--color-secondary);
+  background-color: #a3af03;
+  color: #FFFFFF;
 }
 /*Independed components*/
 .btn-con {
