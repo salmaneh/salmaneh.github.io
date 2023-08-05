@@ -1114,7 +1114,7 @@ section {
 }
 
 .main-btn .btn-text {
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 .main-btn .btn-icon {
@@ -1122,8 +1122,8 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  padding: 1rem;
+  /* border-radius: 50%; */
+  padding: .7rem;
 }
 
 .main-btn::before {
