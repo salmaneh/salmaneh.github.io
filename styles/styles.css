@@ -938,6 +938,7 @@ section {
   line-height: 2rem;
 }
 
+/* share button */
 .contact-content-con .left-contact button {
   padding: .5rem;
   border-radius: .3rem;
@@ -949,7 +950,9 @@ section {
     monospace,
     sans-serif;
 }
-
+.contact-content-con .left-contact button:hover {
+  background-color: var(--color-grey-3);
+}
 .contact-content-con .left-contact .contact-info .contact-item {
   display: flex;
   align-items: center;
