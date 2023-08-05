@@ -26,8 +26,10 @@ html {
 }
 body {
   background-color: var(--color-primary);
-  font-family:"JetBrains Mono",
-  monospace,
+  font-family: 'JetBrains Mono',
+  'monospace',
+  'Helvetica Neue',
+  Arial,
   sans-serif;
   font-size: 1.1rem;
   color: var(--color-white);
@@ -934,6 +936,18 @@ section {
 .contact-content-con .left-contact p {
   margin: 1rem 0;
   line-height: 2rem;
+}
+
+.contact-content-con .left-contact button {
+  padding: .5rem;
+  border-radius: .3rem;
+  border-style: none;
+  background-color: var(--color-secondary);
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: "JetBrains Mono",
+    monospace,
+    sans-serif;
 }
 
 .contact-content-con .left-contact .contact-info .contact-item {
