@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/png" href="img/fav.svg">
+    <!-- Primary Meta Tags -->
+    <title>Salman - Personal Portfolio</title>
+    <meta name="title" content="Salman - Personal Portfolio" />
+    <meta name="description"
+        content="Explore my portfolio, showcasing skills, projects, and experience. Get in touch for collaborations and opportunities." />
+    <meta name="google-site-verification" content="EInaumYx7K5giYFMCpbCIjodkpLqnJXz0RRXddq2dUI" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sa-lman.github.io" />
+    <meta property="og:title" content="Salman - Personal Portfolio" />
+    <meta property="og:description"
+        content="Explore my portfolio, highlighting my skills, projects and experience.Get in touch for collaborations and opportunities." />
+    <meta property="og:image" content="img/logo.svg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://sa-lman.github.io" />
+    <meta property="twitter:title" content="Salman - Personal Portfolio" />
+    <meta property="twitter:description"
+        content="Explore my portfolio, highlighting my skills, projects and experience.Get in touch for collaborations and opportunities." />
+    <meta property="twitter:image" content="img/logo.svg" />
+
+    <link rel="icon" type="image/png" href="img/fav.jpg">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <script src="https://kit.fontawesome.com/e3f764d606.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body class="main-content ">
+    <div id="popup-overlay">
+        <!-- The content of the popup will be dynamically added here using JavaScript -->
+        <div id="popup-message">
+
+        </div>
+    </div>
+
+    <header class="container header active" id="home">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                    <img src="img/hero.jpg" alt="This is me.">
+
+                </div>
+
+            </div>
+
+            <div class="right-header">
+                <h1 class="name">
+                    I'm Salman,
+                    a Web <span id="matrix" data-value="Developer." onmouseover="runAnimation(this)">Developer</span>
+
+                </h1>
+                <p class="sub-title">
+                    Results-driven software developer,strong passion for problem-solving, combined with a deep-seated
+                    fascination for full-stack technologies.</p>
+
+
+                <div class="btn-con">
+                    <a href="cv/Resume.pdf" class="main-btn">
+                        <span class="btn-text">Download Resume</span>
+                        <span class="btn-icon"><i class="fa-solid fa-cloud-arrow-down fa-beat"></i></span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- about section  -->
+        <section class="container about" id="about">
+            <div class="main-title">
+                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <h4>My Personal Background</h4>
+                    <p class="cutoff-text">
+                        With a focus on delivering user-friendly and efficient products, I am constantly seeking
+                        new
+                        challenges and opportunities to grow as a professional.
+                        Whether working on a large-scale project or a smaller task, I always strive to maintain
+                        a high
+                        level of quality, attention to detail, and customer satisfaction.
+                    </p> <input class="expand-btn" type="checkbox">
+                    <p class="cutoff-text"> Familiar
+                        in
+                        various programming languages including JavaScript, C++, Python and list goes on.I am a
+                        team
+                        player, with excellent communication and collaboration skills, and a proven ability to
+                        work
+                        effectively in both Agile and Waterfall environments.</p> <input class="expand-btn"
+                        type="checkbox">
+
+
+
+                </div>
+                <div class="right-about">
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">100+</p>
+                            <p class="small-text">Projects <br /> Completed</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">1+</p>
+                            <p class="small-text">Years of <br /> experience</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">30+</p>
+                            <p class="small-text">Happy <br /> Clients</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">100+</p>
+                            <p class="small-text">Customer <br /> reviews</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-stats">
+                <h4 class="stat-title">My Skills</h4>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fab fa-python"></i> Python</p>
+                        <div class="progress-con">
+                            <p class="prog-text">60%</p>
+                            <div class="progress">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fab fa-html5"></i> html5</p>
+                        <div class="progress-con">
+                            <p class="prog-text">80%</p>
+                            <div class="progress">
+                                <span class="html"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fab fa-css3-alt"></i> css3</p>
+                        <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span class="css"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fab fa-js"></i> javascript</p>
+                        <div class="progress-con">
+                            <p class="prog-text">65%</p>
+                            <div class="progress">
+                                <span class="js"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fab fa-react"></i> ReactJS</p>
+                        <div class="progress-con">
+                            <p class="prog-text">50%</p>
+                            <div class="progress">
+                                <span class="react"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fab fa-node-js"></i> NodeJS</p>
+                        <div class="progress-con">
+                            <p class="prog-text">60%</p>
+                            <div class="progress">
+                                <span class="node"></span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fas fa-database"></i> sql</p>
+                        <div class="progress-con">
+                            <p class="prog-text">75%</p>
+                            <div class="progress">
+                                <span class="sql"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">c++</p>
+                        <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span class="cpp"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fab fa-git-alt"></i> git</p>
+                        <div class="progress-con">
+                            <p class="prog-text">75%</p>
+                            <div class="progress">
+                                <span class="git"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fab fa-java"></i> java</p>
+                        <div class="progress-con">
+                            <p class="prog-text">55%</p>
+                            <div class="progress">
+                                <span class="java"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">tailwind css</p>
+                        <div class="progress-con">
+                            <p class="prog-text">40%</p>
+                            <div class="progress">
+                                <span class="tailwind css"></span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fab fa-bootstrap"></i> bootstrap</p>
+                        <div class="progress-con">
+                            <p class="prog-text">80%</p>
+                            <div class="progress">
+                                <span class="bootstrap"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fas fa-database"></i> mongodb</p>
+                        <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span class="mongodb"></span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <h4 class="stat-title">My Timeline</h4>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fa-solid fa-briefcase fa-beat"></i>
+                    </div>
+                    <p class="tl-duration">2021 - 2023</p>
+                    <h5>Honors(Maths) Degree<span> - IGNOU, University</span></h5>
+                    <p class="cutoff-text">
+                        Holding a Bachelor's degree with honors in Mathematics has equipped me with a robust
+                        foundation
+                        in mathematical concepts and theories, as well as valuable problem-solving skills,
+                        critical
+                        thinking abilities, and practical experience. </p>
+                    <input class="expand-btn" type="checkbox">
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fa-solid fa-briefcase fa-beat"></i>
+                    </div>
+                    <p class="tl-duration">2020 - 2024</p>
+                    <h5>Computer Science Degree<span> - IUST, University</span></h5>
+                    <p class="cutoff-text">
+                        My Bachelor's degree in Computer Science has provided me with a solid foundation in the
+                        fundamental concepts and practical applications of the field, and it was during this
+                        time that I
+                        developed valuable skills, knowledge, and experiences that will serve me well in my
+                        future
+                        endeavors. </p>
+                    <input class="expand-btn" type="checkbox">
+                </div>
+
+            </div>
+        </section>
+        <section class="container" id="portfolio">
+            <div class="main-title">
+                <h2>Work <span>Samples</span><span class="bg-text">Portfolio </span></h2>
+            </div>
+            <p class="port-text">
+                Presented here is a selection of my software development projects, accomplished utilizing
+                diverse
+                programming languages and tools.
+            </p>
+            <div class="portfolios">
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/Quran.jpg" alt="">
+                        <a href="https://salman-ahmad-khan.github.io/progects/Quran/app.html" target="_blank">
+                            <h3>QuranApp</h3>
+                        </a>
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="https://salman-ahmad-khan.github.io/progects/Quran/app.html" target="_blank"
+                                class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://salman-ahmad-khan.github.io/progects/Quran/app.html" target="_blank"
+                                class="icon">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/weather.jpg" alt="">
+                        <a href="https://salman-ahmad-khan.github.io/progects/WeatherApp/Home/app.html" target="_blank">
+                            <h3>WeatherApp</h3>
+                        </a>
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="https://salman-ahmad-khan.github.io/progects/WeatherApp/Home/app.html"
+                                target="_blank" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://salman-ahmad-khan.github.io/progects/WeatherApp/Home/app.html"
+                                target="_blank" class="icon">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port1.jpg" alt="">
+                        <a href="https://salman-ahmad-khan.github.io/progects/jobWebsite/app.html" target="_blank">
+
+                            <h3>Job Website</h3>
+                        </a>
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="https://salman-ahmad-khan.github.io/progects/jobWebsite/app.html" target="_blank"
+                                class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://salman-ahmad-khan.github.io/progects/jobWebsite/app.html" target="_blank"
+                                class="icon">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port2.jpg" alt="">
+                        <a href="https://salman-ahmad-khan.github.io/progects/Animation/animation.html" target="_blank">
+                            <h3>Running Vehicle</h3>
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="https://salman-ahmad-khan.github.io/progects/Animation/animation.html"
+                                target="_blank" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://salman-ahmad-khan.github.io/progects/Animation/animation.html"
+                                target="_blank" class="icon">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port5.jpg" alt="">
+                        <a href="https://salman-ahmad-khan.github.io/progects/counterApp/counter.html" target="_blank">
+                            <h3>CounterApp</h3>
+                        </a>
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="https://salman-ahmad-khan.github.io/progects/counterApp/counter.html"
+                                target="_blank" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://salman-ahmad-khan.github.io/progects/counterApp/counter.html"
+                                target="_blank" class="icon">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/calculator.jpg" alt="">
+                        <a href="https://salman-ahmad-khan.github.io/progects/Calculator/calculator.html"
+                            target="_blank" .>
+                            <h3>Calculator</h3>
+                        </a>
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="https://salman-ahmad-khan.github.io/progects/Calculator/calculator.html"
+                                target="_blank" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://salman-ahmad-khan.github.io/progects/Calculator/calculator.html"
+                                target="_blank" class="icon">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- blog section -->
+        <section class="container" id="blogs">
+            <div class="blogs-content">
+                <div class="main-title">
+                    <h2>My <span>Blogs</span><span class="bg-text">Blogs</span></h2>
+                </div>
+                <div class="blogs">
+                    <div class="blog">
+                        <img src="https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/TaCk3NspYe0/upload/82df15e7d09c5698cf06ed708abd832b.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
+                            alt="">
+                        <div class="blog-text">
+                            <a href="https://salmon.hashnode.dev/adapting-to-the-new-era" target="_blank">
+                                <p>Adapting to the New Era</p>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1688568553411/78da7615-b1c2-40d6-b972-e30d51a39adb.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
+                            alt="">
+                        <div class="blog-text">
+                            <a href="https://salmon.hashnode.dev/ai-just-killed-powerpoint-forever" target="_blank">
+                                <p> AI just killed PowerPoint forever</p>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1688570266574/8f6daf89-50fd-4642-8868-23481461b079.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
+                            alt="">
+                        <div class="blog-text">
+                            <a href="https://salmon.hashnode.dev/20-new-ai-tools-to-boost-productivity" target="_blank">
+                                <p> 20 new AI tools to boost productivity</p>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1688798275870/255e32a3-325f-40b4-876b-3e65ca8dd8fe.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
+                            alt="">
+                        <div class="blog-text">
+                            <a href="https://salmon.hashnode.dev/javascript-function-expression-what-why-and-how"
+                                target="_blank">
+                                <p> JavaScript Function Expression: What, Why, and How</p>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- contact section-->
+        <section class="container contact" id="contact">
+            <div class="contact-container">
+                <div class="main-title">
+                    <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
+                </div>
+                <div class="contact-content-con">
+                    <div class="left-contact">
+
+                        <p>
+                            <strong>
+                                You're welcome to contact me regarding any potential opportunities or to connect for
+                                future collaborations.</strong>
+                        </p>
+
+                        <button id="mail-me"><strong><a href="mailto:connect.celman@gmail.com" target="_blank">
+                                    Contact Me
+                                </a></strong> </button>
+
+
+                        <div class="contact-icons">
+                            <div class="contact-icon">
+                                <a href="https://selmon.bio.link/" target="_blank">
+                                    <i class="fas fa-link"></i>
+                                </a>
+
+                                <a href="https://www.linkedin.com/in/salman-ahmad-khan-725989200/" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+
+
+                                <a href="https://salmon.hashnode.dev/" target="_blank">
+                                    <i class="fas fa-blog"></i>
+                                </a>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="controls">
+        <div class="control active-btn" data-id="home" title="Home">
+            <i class="fas fa-home"></i>
+
+        </div>
+        <div class="control" data-id="about" title="About">
+
+            <i class="fas fa-user-tie"></i>
+        </div>
+        <div class="control" data-id="portfolio" title="Portfolio">
+            <i class="fas fa-briefcase"></i>
+        </div>
+        <div class="control" data-id="blogs" title="Blogs">
+
+            <i class="fas fa-blog"></i>
+        </div>
+        <div class="control" data-id="contact" title="Contact">
+
+            <i class="fas fa-id-card"></i>
+        </div>
+    </div>
+    <div class="theme-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 32 32">
+            <g fill="none" fill-rule="evenodd" transform="translate(-442 -200)">
+                <g fill="white" transform="translate(356 144)">
+                    <path fill-rule="nonzero"
+                        d="M108.5 24C108.5 27.5902136 105.590214 30.5 102 30.5 98.4097864 30.5 95.5 27.5902136 95.5 24 95.5 20.4097864 98.4097864 17.5 102 17.5 105.590214 17.5 108.5 20.4097864 108.5 24zM107 24C107 21.2382136 104.761786 19 102 19 99.2382136 19 97 21.2382136 97 24 97 26.7617864 99.2382136 29 102 29 104.761786 29 107 26.7617864 107 24zM101 12.75L101 14.75C101 15.1642136 101.335786 15.5 101.75 15.5 102.164214 15.5 102.5 15.1642136 102.5 14.75L102.5 12.75C102.5 12.3357864 102.164214 12 101.75 12 101.335786 12 101 12.3357864 101 12.75zM95.7255165 14.6323616L96.7485165 16.4038616C96.9556573 16.7625614 97.4143618 16.8854243 97.7730616 16.6782835 98.1317614 16.4711427 98.2546243 16.0124382 98.0474835 15.6537384L97.0244835 13.8822384C96.8173427 13.5235386 96.3586382 13.4006757 95.9999384 13.6078165 95.6412386 13.8149573 95.5183757 14.2736618 95.7255165 14.6323616zM91.8822384 19.0244835L93.6537384 20.0474835C94.0124382 20.2546243 94.4711427 20.1317614 94.6782835 19.7730616 94.8854243 19.4143618 94.7625614 18.9556573 94.4038616 18.7485165L92.6323616 17.7255165C92.2736618 17.5183757 91.8149573 17.6412386 91.6078165 17.9999384 91.4006757 18.3586382 91.5235386 18.8173427 91.8822384 19.0244835zM90.75 25L92.75 25C93.1642136 25 93.5 24.6642136 93.5 24.25 93.5 23.8357864 93.1642136 23.5 92.75 23.5L90.75 23.5C90.3357864 23.5 90 23.8357864 90 24.25 90 24.6642136 90.3357864 25 90.75 25zM92.6323616 30.2744835L94.4038616 29.2514835C94.7625614 29.0443427 94.8854243 28.5856382 94.6782835 28.2269384 94.4711427 27.8682386 94.0124382 27.7453757 93.6537384 27.9525165L91.8822384 28.9755165C91.5235386 29.1826573 91.4006757 29.6413618 91.6078165 30.0000616 91.8149573 30.3587614 92.2736618 30.4816243 92.6323616 30.2744835zM97.0244835 34.1177616L98.0474835 32.3462616C98.2546243 31.9875618 98.1317614 31.5288573 97.7730616 31.3217165 97.4143618 31.1145757 96.9556573 31.2374386 96.7485165 31.5961384L95.7255165 33.3676384C95.5183757 33.7263382 95.6412386 34.1850427 95.9999384 34.3921835 96.3586382 34.5993243 96.8173427 34.4764614 97.0244835 34.1177616zM103 35.25L103 33.25C103 32.8357864 102.664214 32.5 102.25 32.5 101.835786 32.5 101.5 32.8357864 101.5 33.25L101.5 35.25C101.5 35.6642136 101.835786 36 102.25 36 102.664214 36 103 35.6642136 103 35.25zM108.274483 33.3676384L107.251483 31.5961384C107.044343 31.2374386 106.585638 31.1145757 106.226938 31.3217165 105.868239 31.5288573 105.745376 31.9875618 105.952517 32.3462616L106.975517 34.1177616C107.182657 34.4764614 107.641362 34.5993243 108.000062 34.3921835 108.358761 34.1850427 108.481624 33.7263382 108.274483 33.3676384zM112.117762 28.9755165L110.346262 27.9525165C109.987562 27.7453757 109.528857 27.8682386 109.321717 28.2269384 109.114576 28.5856382 109.237439 29.0443427 109.596138 29.2514835L111.367638 30.2744835C111.726338 30.4816243 112.185043 30.3587614 112.392183 30.0000616 112.599324 29.6413618 112.476461 29.1826573 112.117762 28.9755165zM113.25 23L111.25 23C110.835786 23 110.5 23.3357864 110.5 23.75 110.5 24.1642136 110.835786 24.5 111.25 24.5L113.25 24.5C113.664214 24.5 114 24.1642136 114 23.75 114 23.3357864 113.664214 23 113.25 23zM111.367638 17.7255165L109.596138 18.7485165C109.237439 18.9556573 109.114576 19.4143618 109.321717 19.7730616 109.528857 20.1317614 109.987562 20.2546243 110.346262 20.0474835L112.117762 19.0244835C112.476461 18.8173427 112.599324 18.3586382 112.392183 17.9999384 112.185043 17.6412386 111.726338 17.5183757 111.367638 17.7255165zM106.975517 13.8822384L105.952517 15.6537384C105.745376 16.0124382 105.868239 16.4711427 106.226938 16.6782835 106.585638 16.8854243 107.044343 16.7625614 107.251483 16.4038616L108.274483 14.6323616C108.481624 14.2736618 108.358761 13.8149573 108.000062 13.6078165 107.641362 13.4006757 107.182657 13.5235386 106.975517 13.8822384z"
+                        transform="translate(0 48)" stroke="currentColor" stroke-width="0.25"></path>
+                    <path
+                        d="M98.6123,60.1372 C98.6123,59.3552 98.8753,58.6427 99.3368,58.0942 C99.5293,57.8657 99.3933,57.5092 99.0943,57.5017 C99.0793,57.5012 99.0633,57.5007 99.0483,57.5007 C97.1578,57.4747 95.5418,59.0312 95.5008,60.9217 C95.4578,62.8907 97.0408,64.5002 98.9998,64.5002 C99.7793,64.5002 100.4983,64.2452 101.0798,63.8142 C101.3183,63.6372 101.2358,63.2627 100.9478,63.1897 C99.5923,62.8457 98.6123,61.6072 98.6123,60.1372"
+                        transform="translate(3 11)"></path>
+                </g>
+                <polygon points="444 228 468 228 468 204 444 204"></polygon>
+            </g>
+        </svg></i>
+    </div>
+
+    <script src="js/pop-up.js"></script>
+    <script src="js/matrix-effect.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/email.js"></script>
+    <script src="js/share.js"></script>
+
+</body>
+
+</html>
